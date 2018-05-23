@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity{
         adapter.addFragment(new Tab3Fragment(), "FRAG3");
 
         viewPager.setAdapter(adapter);
+        viewPager.setOffscreenPageLimit(3);
 
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
